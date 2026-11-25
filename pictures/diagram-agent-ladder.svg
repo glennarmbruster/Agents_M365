@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" role="img" aria-labelledby="t3 d3">
+      <title id="t3">The Five Levels of Parking &amp; Transit Agents</title>
+      <desc id="d3">Five rising steps from Level 1 Shift Note Formatter to Level 5 Multi-Agent Dispatch Router.</desc>
+      <rect x="2" y="2" width="756" height="276" rx="12" fill="#faf6ea" stroke="#c1bcab" stroke-width="2"/>
+      <text x="24" y="34" fill="#145756" font-family="Georgia,serif" font-size="21">Your Agent Growth Ladder: Simple to Complex</text>
+      <rect x="24" y="206" width="136" height="54" rx="6" fill="#fffdf6" stroke="#145756" stroke-width="2"/>
+      <text x="34" y="227" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">LEVEL 1 · 5 MIN</text>
+      <text x="34" y="246" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Shift Formatter</text>
+      <rect x="168" y="168" width="136" height="92" rx="6" fill="#fffdf6" stroke="#145756" stroke-width="2"/>
+      <text x="178" y="189" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">LEVEL 2 · 10 MIN</text>
+      <text x="178" y="208" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Rulebook Q&amp;A</text>
+      <text x="178" y="228" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11">Permits, shuttles,</text>
+      <text x="178" y="244" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11">cites Rule VP/SH</text>
+      <rect x="312" y="130" width="136" height="130" rx="6" fill="#edf1e7" stroke="#145756" stroke-width="2"/>
+      <text x="322" y="151" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">LEVEL 3 · 20 MIN</text>
+      <text x="322" y="170" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Live Lot Folder</text>
+      <text x="322" y="190" fill="#182c2d" font-family="system-ui,sans-serif" font-size="11">SharePoint folder</text>
+      <text x="322" y="208" fill="#182c2d" font-family="system-ui,sans-serif" font-size="11">Auto-updates on</text>
+      <text x="322" y="224" fill="#182c2d" font-family="system-ui,sans-serif" font-size="11">detour &amp; rate edits</text>
+      <rect x="456" y="92" width="136" height="168" rx="6" fill="#edf1e7" stroke="#8b571b" stroke-width="2"/>
+      <text x="466" y="113" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">LEVEL 4 · STUDIO</text>
+      <text x="466" y="132" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Permit Intake</text>
+      <text x="466" y="152" fill="#182c2d" font-family="system-ui,sans-serif" font-size="11">Asks event &amp; bus</text>
+      <text x="466" y="170" fill="#182c2d" font-family="system-ui,sans-serif" font-size="11">details, previews,</text>
+      <text x="466" y="188" fill="#182c2d" font-family="system-ui,sans-serif" font-size="11">&amp; logs to Excel</text>
+      <rect x="600" y="54" width="136" height="206" rx="6" fill="#145756"/>
+      <text x="610" y="75" fill="#f2dfc4" font-family="system-ui,sans-serif" font-size="11" font-weight="700">LEVEL 5 · TEAM</text>
+      <text x="610" y="94" fill="#ffffff" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Dispatch Router</text>
+      <text x="610" y="116" fill="#faf6ea" font-family="system-ui,sans-serif" font-size="11">ADA &amp; overflow</text>
+      <text x="610" y="132" fill="#faf6ea" font-family="system-ui,sans-serif" font-size="11">Teams alerts +</text>
+      <text x="610" y="152" fill="#faf6ea" font-family="system-ui,sans-serif" font-size="11">specialist sub-</text>
+      <text x="610" y="168" fill="#faf6ea" font-family="system-ui,sans-serif" font-size="11">agents working</text>
+    </svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="t8 d8">
+      <title id="t8">Team Rollout Cycle for Parking &amp; Transit</title>
+      <desc id="d8">Solo check, buddy pilot, shift launch, monthly refresh.</desc>
+      <rect x="2" y="2" width="756" height="206" rx="12" fill="#faf6ea" stroke="#c1bcab" stroke-width="2"/>
+      <text x="24" y="34" fill="#145756" font-family="Georgia,serif" font-size="20">How to Roll Out an Agent Across Booth, Dispatch &amp; Office</text>
+      <rect x="24" y="56" width="165" height="128" rx="8" fill="#fffdf6" stroke="#145756" stroke-width="2"/>
+      <text x="38" y="82" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">1. SOLO CHECK</text>
+      <text x="38" y="104" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5" font-weight="600">Test 3 Questions</text>
+      <text x="38" y="126" fill="#4d605c" font-family="system-ui,sans-serif" font-size="12">• 1 standard rate</text>
+      <text x="38" y="144" fill="#4d605c" font-family="system-ui,sans-serif" font-size="12">• 1 Sunday/ADA edge</text>
+      <text x="38" y="162" fill="#4d605c" font-family="system-ui,sans-serif" font-size="12">• 1 unlisted rule</text>
+      <rect x="205" y="56" width="165" height="128" rx="8" fill="#fffdf6" stroke="#145756" stroke-width="2"/>
+      <text x="219" y="82" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">2. BUDDY PILOT</text>
+      <text x="219" y="104" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5" font-weight="600">Test With 2 Shifts</text>
+      <text x="219" y="126" fill="#4d605c" font-family="system-ui,sans-serif" font-size="12">• 1 booth + 1 dispatch</text>
+      <text x="219" y="144" fill="#4d605c" font-family="system-ui,sans-serif" font-size="12">• Add lot nicknames</text>
+      <text x="219" y="162" fill="#4d605c" font-family="system-ui,sans-serif" font-size="12">• Check folder access</text>
+      <rect x="386" y="56" width="165" height="128" rx="8" fill="#edf1e7" stroke="#145756" stroke-width="2"/>
+      <text x="400" y="82" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">3. TEAM LAUNCH</text>
+      <text x="400" y="104" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5" font-weight="600">Pin in Ops Teams</text>
+      <text x="400" y="126" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">• Pin agent link</text>
+      <text x="400" y="144" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">• Share 3 starter tasks</text>
+      <text x="400" y="162" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">• Name backup editor</text>
+      <rect x="567" y="56" width="169" height="128" rx="8" fill="#edf1e7" stroke="#8b571b" stroke-width="2"/>
+      <text x="581" y="82" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">4. KEEP IT FRESH</text>
+      <text x="581" y="104" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5" font-weight="600">Semester / Event Sync</text>
+      <text x="581" y="126" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">• Update detour &amp; rate</text>
+      <text x="581" y="144" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">  files in SharePoint</text>
+      <text x="581" y="162" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">• Archive expired maps</text>
+    </svg>

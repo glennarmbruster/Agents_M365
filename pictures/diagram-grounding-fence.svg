@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-labelledby="t5e d5e">
+      <title id="t5e">Zero-Trust RAG &amp; Entra ID ACL Enforcement Pipeline</title>
+      <desc id="d5e">User query passes through Entra token validation, SharePoint ACL trimming, and citation grounding.</desc>
+      <rect x="2" y="2" width="756" height="216" rx="12" fill="#faf6ea" stroke="#c1bcab" stroke-width="2"/>
+      <rect x="24" y="58" width="165" height="104" rx="8" fill="#fffdf6" stroke="#182c2d" stroke-width="2"/>
+      <text x="106" y="86" text-anchor="middle" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">1. INVOKING USER</text>
+      <text x="106" y="110" text-anchor="middle" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12.5" font-weight="600">Entra ID OAuth Token</text>
+      <text x="106" y="132" text-anchor="middle" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">Delegated user context</text>
+      <path d="M192 110 H226" stroke="#145756" stroke-width="3"/>
+      <polygon points="224,103 236,110 224,117" fill="#145756"/>
+      <rect x="240" y="26" width="266" height="168" rx="10" fill="#edf1e7" stroke="#145756" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <text x="373" y="52" text-anchor="middle" fill="#145756" font-family="system-ui,sans-serif" font-size="12" font-weight="700">2. SEMANTIC INDEX &amp; ACL TRIMMING</text>
+      <rect x="260" y="66" width="226" height="44" rx="5" fill="#fffdf6" stroke="#145756" stroke-width="1.5"/>
+      <text x="373" y="93" text-anchor="middle" fill="#182c2d" font-family="ui-monospace,monospace" font-size="11.5">items_by_url: /Approved-Policies</text>
+      <text x="373" y="136" text-anchor="middle" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">WebSearch capability = omitted</text>
+      <text x="373" y="156" text-anchor="middle" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">SharePoint ACLs trim unauthorized chunks</text>
+      <text x="373" y="176" text-anchor="middle" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11.5" font-weight="600">Sensitivity labels &amp; Purview DLP enforced</text>
+      <path d="M510 110 H544" stroke="#145756" stroke-width="3"/>
+      <polygon points="542,103 554,110 542,117" fill="#145756"/>
+      <rect x="558" y="52" width="178" height="116" rx="8" fill="#145756"/>
+      <text x="647" y="80" text-anchor="middle" fill="#f2dfc4" font-family="system-ui,sans-serif" font-size="11" font-weight="700">3. GROUNDED OUTPUT</text>
+      <text x="647" y="106" text-anchor="middle" fill="#ffffff" font-family="system-ui,sans-serif" font-size="12.5">Extractive answer with</text>
+      <text x="647" y="124" text-anchor="middle" fill="#ffffff" font-family="system-ui,sans-serif" font-size="12.5">deep-link citation</text>
+      <text x="647" y="148" text-anchor="middle" fill="#f2dfc4" font-family="ui-monospace,monospace" font-size="11">[Source: Rule ID]</text>
+    </svg>

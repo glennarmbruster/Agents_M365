@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 230" role="img" aria-labelledby="t4 d4">
+      <title id="t4">Agent Builder vs. Copilot Studio for Parking Teams</title>
+      <desc id="d4">When to use Agent Builder vs. Copilot Studio.</desc>
+      <rect x="2" y="2" width="756" height="226" rx="12" fill="#faf6ea" stroke="#c1bcab" stroke-width="2"/>
+      <rect x="24" y="22" width="344" height="186" rx="8" fill="#fffdf6" stroke="#145756" stroke-width="2"/>
+      <text x="42" y="50" fill="#145756" font-family="system-ui,sans-serif" font-size="12" font-weight="700">AGENT BUILDER (INSIDE M365 COPILOT)</text>
+      <text x="42" y="76" fill="#182c2d" font-family="Georgia,serif" font-size="19">Fast &amp; No-Code (Levels 1–3)</text>
+      <text x="42" y="106" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5">✓ Permit, shuttle, &amp; appeal rule Q&amp;A</text>
+      <text x="42" y="132" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5">✓ Auditing CSV occupancy &amp; repair logs</text>
+      <text x="42" y="158" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5">✓ Drafting polite driver &amp; event emails</text>
+      <text x="42" y="184" fill="#8b571b" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Builds in 10 minutes with zero code!</text>
+      <rect x="392" y="22" width="344" height="186" rx="8" fill="#edf1e7" stroke="#8b571b" stroke-width="2"/>
+      <text x="410" y="50" fill="#8b571b" font-family="system-ui,sans-serif" font-size="12" font-weight="700">COPILOT STUDIO (FULL WORKSHOP)</text>
+      <text x="410" y="76" fill="#182c2d" font-family="Georgia,serif" font-size="19">Actions &amp; Alerts (Levels 4–5)</text>
+      <text x="410" y="106" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5">✓ Guided event permit &amp; charter bus intake</text>
+      <text x="410" y="132" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5">✓ Writes new rows to Excel / SharePoint</text>
+      <text x="410" y="158" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5">✓ Posts automatic ADA &amp; overflow alerts</text>
+      <text x="410" y="184" fill="#145756" font-family="system-ui,sans-serif" font-size="13" font-weight="600">Upgrade an Agent Builder helper anytime.</text>
+    </svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 230" role="img" aria-labelledby="t6 d6">
+      <title id="t6">Two-Lock Sharing for Parking &amp; Transit Teams</title>
+      <desc id="d6">Agent share link and SharePoint permissions.</desc>
+      <rect x="2" y="2" width="756" height="226" rx="12" fill="#faf6ea" stroke="#c1bcab" stroke-width="2"/>
+      <text x="24" y="34" fill="#145756" font-family="Georgia,serif" font-size="21">Two Locks Keep Shared Team Agents Safe</text>
+      <rect x="24" y="54" width="340" height="152" rx="8" fill="#fffdf6" stroke="#145756" stroke-width="2"/>
+      <text x="42" y="80" fill="#8b571b" font-family="system-ui,sans-serif" font-size="12" font-weight="700">LOCK 1 · WHO CAN OPEN THE AGENT?</text>
+      <text x="42" y="106" fill="#182c2d" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Controlled by your Share button:</text>
+      <text x="42" y="132" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• Only me (while testing new rules)</text>
+      <text x="42" y="156" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• Parking &amp; Transit Staff group</text>
+      <text x="42" y="180" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• Whole organization (public visitor FAQ)</text>
+      <rect x="396" y="54" width="340" height="152" rx="8" fill="#edf1e7" stroke="#8b571b" stroke-width="2"/>
+      <text x="414" y="80" fill="#8b571b" font-family="system-ui,sans-serif" font-size="12" font-weight="700">LOCK 2 · WHICH FILES CAN IT READ?</text>
+      <text x="414" y="106" fill="#182c2d" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Controlled by SharePoint &amp; OneDrive:</text>
+      <text x="414" y="132" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• Checks each staff member's file access</text>
+      <text x="414" y="156" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• Team needs View access to SOP folder</text>
+      <text x="414" y="180" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• VIP/HR plate records stay protected</text>
+    </svg>

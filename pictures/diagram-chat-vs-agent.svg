@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 230" role="img" aria-labelledby="t1e d1e">
+      <title id="t1e">Ad-Hoc M365 Copilot Chat vs. Declarative &amp; Custom Engine Agents</title>
+      <desc id="d1e">Architectural comparison between ad-hoc M365 Copilot orchestration and scoped declarative/Studio agents.</desc>
+      <rect x="2" y="2" width="756" height="226" rx="12" fill="#faf6ea" stroke="#c1bcab" stroke-width="2"/>
+      <rect x="24" y="24" width="335" height="182" rx="8" fill="#fffdf6" stroke="#8c9990" stroke-width="2"/>
+      <text x="44" y="54" fill="#8b571b" font-family="system-ui,sans-serif" font-size="12" font-weight="700">AD-HOC M365 COPILOT CHAT</text>
+      <text x="44" y="80" fill="#182c2d" font-family="Georgia,serif" font-size="19">Broad Tenant Graph Grounding</text>
+      <text x="44" y="112" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• Queries entire user semantic index</text>
+      <text x="44" y="138" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• Stateless system prompt per thread</text>
+      <text x="44" y="164" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• No custom API plugins or triggers</text>
+      <path d="M368 115 H394" stroke="#8b571b" stroke-width="4" stroke-linecap="round"/>
+      <polygon points="392,107 406,115 392,123" fill="#8b571b"/>
+      <rect x="410" y="24" width="326" height="182" rx="8" fill="#edf1e7" stroke="#145756" stroke-width="2.5"/>
+      <text x="430" y="54" fill="#145756" font-family="system-ui,sans-serif" font-size="12" font-weight="700">SCOPED COPILOT AGENT</text>
+      <text x="430" y="80" fill="#182c2d" font-family="Georgia,serif" font-size="19">Manifest + Scoped RAG + Actions</text>
+      <text x="430" y="112" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• Deterministic system instructions</text>
+      <text x="430" y="138" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• Pinned OneDriveAndSharePoint URLs</text>
+      <text x="430" y="164" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13">• Governed via MAC, Entra ID &amp; DLP</text>
+    </svg>

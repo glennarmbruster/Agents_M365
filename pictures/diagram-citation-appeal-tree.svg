@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-labelledby="t11 d11">
+      <title id="t11">Citation Appeal &amp; Boot/Tow Decision Tree</title>
+      <desc id="d11">Decision flow checking fire lane/ADA tow first, then 14-day window, then first-time warning vs. 3+ unpaid boot rule.</desc>
+      <rect x="2" y="2" width="756" height="206" rx="12" fill="#faf6ea" stroke="#c1bcab" stroke-width="2"/>
+      <text x="24" y="34" fill="#145756" font-family="Georgia,serif" font-size="20">Citation Appeal &amp; Enforcement Decision Tree (Rules AP-01 to AP-04)</text>
+
+      <rect x="24" y="56" width="166" height="126" rx="8" fill="#fffdf6" stroke="#8b571b" stroke-width="2"/>
+      <text x="38" y="80" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">CHECK 1 · SAFETY</text>
+      <text x="38" y="104" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Fire Lane or ADA?</text>
+      <text x="38" y="128" fill="#4d605c" font-family="system-ui,sans-serif" font-size="12">Immediate tow;</text>
+      <text x="38" y="146" fill="#4d605c" font-family="system-ui,sans-serif" font-size="12">no warning waiver</text>
+      <text x="38" y="168" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">[Rule AP-04]</text>
+
+      <rect x="206" y="56" width="166" height="126" rx="8" fill="#fffdf6" stroke="#145756" stroke-width="2"/>
+      <text x="220" y="80" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">CHECK 2 · DEADLINE</text>
+      <text x="220" y="104" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Within 14 Days?</text>
+      <text x="220" y="128" fill="#4d605c" font-family="system-ui,sans-serif" font-size="12">Appeal must be</text>
+      <text x="220" y="146" fill="#4d605c" font-family="system-ui,sans-serif" font-size="12">filed &lt;= 14 days</text>
+      <text x="220" y="168" fill="#145756" font-family="system-ui,sans-serif" font-size="11" font-weight="700">[Rule AP-01]</text>
+
+      <rect x="388" y="56" width="166" height="126" rx="8" fill="#edf1e7" stroke="#145756" stroke-width="2"/>
+      <text x="402" y="80" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">CHECK 3 · FIRST VISIT</text>
+      <text x="402" y="104" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Honest Permit Slip?</text>
+      <text x="402" y="128" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">1-time warning if</text>
+      <text x="402" y="146" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">0 prior citations</text>
+      <text x="402" y="168" fill="#145756" font-family="system-ui,sans-serif" font-size="11" font-weight="700">[Rule AP-02]</text>
+
+      <rect x="570" y="56" width="166" height="126" rx="8" fill="#145756"/>
+      <text x="584" y="80" fill="#f2dfc4" font-family="system-ui,sans-serif" font-size="11" font-weight="700">CHECK 4 · SCOFFLAW</text>
+      <text x="584" y="104" fill="#ffffff" font-family="system-ui,sans-serif" font-size="13" font-weight="700">3+ Unpaid &gt;30d?</text>
+      <text x="584" y="128" fill="#faf6ea" font-family="system-ui,sans-serif" font-size="12">Flag vehicle for</text>
+      <text x="584" y="146" fill="#faf6ea" font-family="system-ui,sans-serif" font-size="12">boot immobilization</text>
+      <text x="584" y="168" fill="#f2dfc4" font-family="system-ui,sans-serif" font-size="11" font-weight="700">[Rule AP-04]</text>
+    </svg>
