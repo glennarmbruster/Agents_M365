@@ -1,0 +1,7 @@
+# M365 Copilot Agent Governance & DLP Baseline (Reference Architecture)
+- **Rule GOV-01 (Identity & Grounding):** Declarative agents execute strictly under the invoking user's Microsoft Entra ID token. Graph and SharePoint ACLs are enforced at query time; agents never elevate read privileges.
+- **Rule GOV-02 (Knowledge Scoping):** Production team agents must scope `OneDriveAndSharePoint` capabilities to a dedicated `Approved-Policies` document library rather than broad site-wide wildcards, preventing accidental exposure of draft or restricted folders.
+- **Rule GOV-03 (Web Grounding Control):** Disable `WebSearch` capability on compliance, HR, and operational policy agents to prevent external-domain prompt injection and non-authoritative answers.
+- **Rule GOV-04 (Power Platform DLP Boundaries):** In Copilot Studio, connectors are governed by tenant DLP policies (Business vs. Non-Business vs. Blocked). Mixing Business connectors (SharePoint, Excel Online) with Non-Business connectors in the same agent triggers DLP suspension.
+- **Rule GOV-05 (Human-in-the-Loop Mutation):** Any connector action performing `POST`, `PUT`, `PATCH`, or `DELETE` against production systems must enable explicit user confirmation cards before execution.
+- **Rule GOV-06 (ALM & Environment Promotion):** Custom Copilot Studio agents with connectors and event triggers must be authored in a Developer/Sandbox environment, packaged inside a Power Platform Solution, and promoted to Production via managed solution pipelines.

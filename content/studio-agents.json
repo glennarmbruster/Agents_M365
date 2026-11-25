@@ -1,0 +1,162 @@
+[
+  {
+    "id": "builder-vs-studio",
+    "title": "Power Platform DLP & Connector Governance in Copilot Studio",
+    "summary": "Enforce Business vs. Non-Business vs. Blocked DLP policies and prevent cross-group connector quarantine in Copilot Studio.",
+    "intro": {
+      "what": "Copilot Studio agents execute inside Power Platform environments governed by Data Loss Prevention (DLP) policies.",
+      "features": "Combining a Business connector (SharePoint, Excel Online) with a Non-Business connector (external HTTP/SaaS) in one agent triggers immediate DLP suspension.",
+      "exchange": "Restrict Office 365 Outlook send actions behind explicit confirmation cards and approved service accounts where required.",
+      "m365": "Configure dedicated Copilot Studio environment DLP rules covering knowledge sources, triggers, and connectors.",
+      "developer": "Use Environment Variables and Connection References so solutions promote cleanly across Dev, UAT, and Prod.",
+      "sources": [
+        [
+          "Microsoft \u00b7 Configure DLP policies for Copilot Studio agents",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-data-loss-prevention"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "DLP Classification & Connector Hygiene",
+        "paragraphs": [
+          "Every connector in Copilot Studio belongs to Business, Non-Business, or Blocked. Engineers should classify SharePoint, OneDrive, Excel Online (Business), Microsoft Teams, and Planner in Business, isolate external APIs in Non-Business, and block unauthenticated HTTP or consumer connectors.",
+          "Always enable user confirmation on write-back actions (POST/PUT/DELETE) to mitigate prompt-injection data corruption."
+        ],
+        "table": {
+          "columns": [
+            "DLP Group",
+            "Approved Connectors",
+            "Runtime Enforcement"
+          ],
+          "rows": [
+            [
+              "Business",
+              "SharePoint, Excel Online, Teams, Planner",
+              "Permitted together inside internal agents"
+            ],
+            [
+              "Non-Business",
+              "Third-party SaaS / verified custom connectors",
+              "Quarantined if mixed with Business connectors"
+            ],
+            [
+              "Blocked",
+              "Consumer social, unauthenticated HTTP",
+              "Blocked at design and runtime"
+            ]
+          ]
+        },
+        "sources": [
+          [
+            "Microsoft \u00b7 Configure DLP policies for Copilot Studio agents",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-data-loss-prevention"
+          ]
+        ]
+      }
+    ],
+    "tags": [
+      "dlp",
+      "power-platform",
+      "connectors"
+    ],
+    "basis": [
+      "ai-drafted",
+      "source-read"
+    ],
+    "lastVerified": "2026-11-25"
+  },
+  {
+    "id": "interactive-intake-and-actions",
+    "title": "Deterministic Topics, Adaptive Cards & Action Confirmation",
+    "summary": "Architect structured Copilot Studio topics with entity extraction, input validation, Adaptive Cards, and mandatory write confirmation.",
+    "intro": {
+      "what": "How to replace fragile free-text prompt parsing with deterministic Topic graphs and strongly typed variables.",
+      "features": "Uses Question nodes with entity validation (Date, Number, Closed List), Power Fx formulas, and confirmation prompts.",
+      "exchange": "Format structured approval summaries before dispatching notifications.",
+      "m365": "Bind Excel Online and SharePoint List actions via Connection References.",
+      "developer": "Enforce idempotency keys or duplicate checks before inserting rows.",
+      "sources": [
+        [
+          "Microsoft \u00b7 Add actions and connectors in Copilot Studio",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-plugin-actions"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "Engineering Pattern: Validate -> Preview -> Confirm -> Mutate",
+        "paragraphs": [
+          "1. Entity Extraction & Validation: Use Closed List entities for finite options (e.g., Facility/Lot) and numeric bounds checks.",
+          "2. Power Fx Business Logic: Evaluate threshold rules deterministically in Condition nodes rather than relying solely on LLM arithmetic.",
+          "3. Human-in-the-Loop Confirmation: Render all resolved parameters in an Adaptive Card or Yes/No prompt prior to invoking the connector.",
+          "4. Idempotent Write & Receipt: Append row with a deterministic RequestID and return confirmation metadata."
+        ],
+        "sources": [
+          [
+            "Microsoft \u00b7 Add actions and connectors in Copilot Studio",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-plugin-actions"
+          ]
+        ]
+      }
+    ],
+    "tags": [
+      "topics",
+      "adaptive-cards",
+      "power-fx"
+    ],
+    "basis": [
+      "ai-drafted",
+      "source-read"
+    ],
+    "lastVerified": "2026-11-25"
+  },
+  {
+    "id": "autonomous-and-multi-agent",
+    "title": "ALM Solutions, Event Triggers & Multi-Agent Orchestration",
+    "summary": "Package Copilot Studio agents inside Power Platform Solutions, configure filtered event triggers, and orchestrate modular sub-agents.",
+    "intro": {
+      "what": "Production engineering lifecycle for autonomous and multi-agent architectures in Copilot Studio.",
+      "features": "Uses Unmanaged -> Managed Solution promotion, Environment Variables for SharePoint/Excel IDs, and modular sub-agent delegation.",
+      "exchange": "Filter event triggers tightly so background runs only fire on actionable thresholds.",
+      "m365": "Publish approved agents to the Microsoft 365 Admin Center Integrated Apps catalog.",
+      "developer": "Inspect Copilot Studio Activity transcripts and Purview audit logs for every autonomous trigger invocation.",
+      "sources": [
+        [
+          "Microsoft \u00b7 Export and import agents using solutions",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-import-export"
+        ],
+        [
+          "Microsoft \u00b7 Orchestrate multiple agents in Copilot Studio",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-orchestrate-agents"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "ALM & Multi-Agent Modularity",
+        "paragraphs": [
+          "Never author production connector agents directly in the Default environment. Build inside a dedicated Developer Sandbox, parameterize SharePoint site URLs and workbook IDs using Environment Variables, export as a Managed Solution, and promote through UAT to Production.",
+          "For complex domains, decompose logic into focused specialist child agents (each with <=5 knowledge URLs) orchestrated by a parent router agent with crisp tool descriptions."
+        ],
+        "sources": [
+          [
+            "Microsoft \u00b7 Export and import agents using solutions",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-import-export"
+          ]
+        ]
+      }
+    ],
+    "tags": [
+      "alm",
+      "solutions",
+      "multi-agent",
+      "triggers"
+    ],
+    "basis": [
+      "ai-drafted",
+      "source-read"
+    ],
+    "lastVerified": "2026-11-25"
+  }
+]

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d40">
+  <title>All About Copilot Agents · M365 Engineer Edition</title>
+  <link rel="stylesheet" href="./reader.css">
+  <script src="./book-pager.js" defer></script>
+  <link rel="stylesheet" href="./guide.css">
+  <script src="./guides.js" defer></script>
+  <script src="./reader.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to book</a>
+  <header class="bar">
+    <div>
+      <a class="contents" href="#contents">Contents</a>
+      <a href="#start">Start Here</a>
+      <a href="#labs">24 Labs</a>
+      <a href="#pictures">12 Diagrams</a>
+      <span id="offline" role="status">Offline-ready portable edition</span>
+    </div>
+  </header>
+  <main id="main">
+    <section id="index">
+      <div class="front">
+        <img src="./cover.svg" width="220" height="280" alt="All About Copilot Agents · M365 Engineer Edition cover">
+        <div>
+          <span class="eyebrow">M365 Systems & Platform Engineering</span>
+          <h1>All About Copilot Agents · M365 Engineer Edition</h1>
+          <p>Architect, govern, and deploy declarative and Copilot Studio agents across Microsoft 365—covering manifest v1.3 schemas, Entra ID ACL trimming, Power Platform DLP boundaries, ALM solutions, and Purview auditing.</p>
+          <div class="review" id="edition"></div>
+          <a class="lab-action" id="kit-link" href="./practice/m365-engineer-agents-kit.zip" download="m365-engineer-agents-kit.zip">Download Practice Kit (.zip)</a>
+        </div>
+      </div>
+
+      <section id="guide-door" class="guide-door">
+        <div>
+          <h2>New to Copilot Agents?</h2>
+          <p>Try the offline Practice Desk right here, then walk through the 4 illustrated quickstarts.</p>
+        </div>
+        <a class="lab-action primary" href="#first-project">Try the Practice Desk →</a>
+        <nav class="quick-links" aria-label="Quick start lessons">
+          <a href="#open-agent-builder">1. Open Agent Builder</a>
+          <a href="#build-first-prompt-agent">2. Build a 5-Min Helper</a>
+          <a href="#add-handbook-knowledge">3. Ground in Approved Files</a>
+          <a href="#sharing-and-permissions">4. Share Safely With Teams</a>
+        </nav>
+      </section>
+
+      <section class="lab-door" id="lab-door">
+        <div>
+          <h2>24 Hands-On Labs (Simple to Complex)</h2>
+          <p id="lab-count">24 hands-on labs progressing from Starter to Expert.</p>
+        </div>
+        <a class="lab-action" href="#labs">Browse all 24 labs →</a>
+      </section>
+
+      <section id="gallery" class="library" hidden>
+        <h2 tabindex="-1" id="gallery-title">12 Visual Diagrams</h2>
+        <p>Tap any diagram to jump straight to its chapter, or tap to enlarge it full-screen.</p>
+        <div id="thumbs"></div>
+      </section>
+
+      <section id="catalog" class="library" aria-labelledby="contents-title">
+        <div class="tools">
+          <h2 id="contents-title" tabindex="-1">Table of Contents</h2>
+          <label class="search">Find a topic <input type="search" id="query" placeholder="Search lessons, rules, labs…" autocomplete="off"></label>
+        </div>
+        <p id="matches" aria-live="polite"></p>
+        <div id="groups"></div>
+      </section>
+    </section>
+
+    <article id="chapter" hidden>
+      <div id="chapter-top"></div>
+      <header class="chapter-heading">
+        <div class="eyebrow" id="group-name"></div>
+        <h1 id="chapter-title" tabindex="-1"></h1>
+        <p id="summary"></p>
+        <div class="review" id="review-date"></div>
+      </header>
+      <div id="body"></div>
+      <book-pager top="#chapter-top"></book-pager>
+    </article>
+  </main>
+</body>
+</html>

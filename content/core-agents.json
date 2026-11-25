@@ -1,0 +1,317 @@
+[
+  {
+    "id": "what-is-a-copilot-agent",
+    "title": "What Is a Copilot Agent? (Complete Architecture & Plain-English Guide)",
+    "summary": "Understand how a Copilot agent turns a general-purpose AI into a dependable workplace specialist with permanent instructions, an approved file library, and optional hands.",
+    "intro": {
+      "what": "A Copilot agent is a saved, purpose-built AI specialist inside Microsoft 365 that packages three core components: (1) a permanent job description (Instructions), (2) a private filing cabinet of approved documents (Knowledge), and (3) optional workplace tools (Actions & Triggers) to execute repeatable work consistently.",
+      "features": "Unlike a standard chat window that starts blank every time you close the tab, an agent packages your exact formatting standards, policy boundaries, and SharePoint links into a reusable helper anyone on your team can launch with one click in Microsoft 365 Copilot or Microsoft Teams.",
+      "m365": "Connects directly to SharePoint libraries (such as 'Copilot-Approved-SOPs'), OneDrive files, and Word/PDF/CSV handbooks\u2014strictly honoring each individual user's existing Microsoft 365 file permissions at query time.",
+      "exchange": "Reads shared policy rules to draft accurate, compliant email replies or shift handoff summaries without ever modifying live mailbox settings without human confirmation.",
+      "developer": "Under the hood, lightweight agents built in Agent Builder are 'Declarative Agents' (JSON manifests v1.3+ riding on the Microsoft 365 Copilot orchestrator), while advanced agents built in Copilot Studio are 'Custom Engine / Orchestrated Agents' with deterministic topic graphs, Power Platform connectors, and event triggers.",
+      "sources": [
+        [
+          "Microsoft Learn \u00b7 Overview of agents for Microsoft 365 Copilot",
+          "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview"
+        ],
+        [
+          "Microsoft Learn \u00b7 Declarative agents architecture",
+          "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-declarative-agent"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "Why General Chat Is Not Enough for Repeatable Team Work",
+        "paragraphs": [
+          "When you open standard Microsoft 365 Copilot Chat, you are talking to a brilliant generalist. It can summarize a 40-message email thread, brainstorm an agenda, or draft a quick memo. However, because it is built to handle ad-hoc requests, it starts every conversation with a blank slate and searches across everything your work account can see\u2014including outdated drafts, old emails, and the public internet.",
+          "Whenever a team performs the same operational task every day\u2014such as verifying policy rules, checking schedules, auditing CSV logs, or formatting shift handoffs\u2014re-typing a 12-line prompt and re-uploading M365-Governance-Baseline.txt every morning wastes time and invites mistakes. One teammate forgets a rule, another leaves web search turned on, and two shifts end up giving conflicting answers.",
+          "A Copilot agent solves this permanently. You write the rules once, lock the agent onto your team's official SharePoint folder, turn off outside guessing, and share a single link. From that moment on, every teammate clicks the same helper and gets the exact same structure, tone, and Rule ID citations."
+        ],
+        "table": {
+          "columns": [
+            "Dimension",
+            "Regular Microsoft 365 Copilot Chat",
+            "Custom Copilot Agent"
+          ],
+          "rows": [
+            [
+              "Starting Memory",
+              "Blank slate every new conversation",
+              "Pre-loaded with permanent role rules & formatting"
+            ],
+            [
+              "Knowledge Scope",
+              "Broadly searches your entire M365 + public web",
+              "Fenced to specific SharePoint files/folders you approve"
+            ],
+            [
+              "Consistency Across Staff",
+              "Varies widely depending on how each person prompts",
+              "Identical structure, tone, and Rule ID citations every run"
+            ],
+            [
+              "Team Distribution",
+              "Trapped in one person's private chat history",
+              "Shareable via link and pinnable inside Microsoft Teams"
+            ],
+            [
+              "Workflow & Actions",
+              "Single-turn Q&A and text generation",
+              "Can run structured intake forms, log Excel rows, and alert Teams"
+            ]
+          ]
+        },
+        "sources": [
+          [
+            "Microsoft Learn \u00b7 Overview of agents for Microsoft 365 Copilot",
+            "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview"
+          ]
+        ]
+      },
+      {
+        "title": "Inside the Engine: How an Agent Processes Every Question",
+        "paragraphs": [
+          "When a teammate types a question into a Copilot agent, four distinct steps happen behind the scenes in two to four seconds: (1) The Orchestrator reads the user's question alongside your saved Instructions (its constitution). (2) If Knowledge sources are attached, the agent queries Microsoft Graph Semantic Search\u2014checking only the files inside your approved SharePoint folder that the asking user has permission to read.",
+          "(3) The language model synthesizes an answer using only those retrieved passages, applying your formatting and citation rules (such as requiring every fee, SLA, or deadline to include a bracketed Rule ID). (4) If the agent has Actions enabled in Copilot Studio, it checks whether a tool should be called\u2014and pauses to show a human confirmation card before writing any data.",
+          "Every Copilot agent you will ever build is assembled from the same four building blocks: (1) Name & Description (so staff pick the right specialist), (2) Instructions (step-by-step operating rules), (3) Knowledge (approved handbooks, timetables, and CSVs), and (4) Actions & Triggers (optional hands to write rows or send alerts)."
+        ],
+        "exercise": {
+          "prompt": "A supervisor asks: 'If I attach a restricted HR disciplinary folder to a team agent and share the agent link with 20 staff members, can they ask the agent to read those HR files?'",
+          "answer": [
+            "No! Copilot agents never bypass Microsoft 365 security. At query time, the agent runs strictly under the asking user's own Entra ID identity. Because those staff members do not have SharePoint read permission on the HR folder, Microsoft Graph security trimming hides those files from the agent for them."
+          ]
+        },
+        "sources": [
+          [
+            "Microsoft Learn \u00b7 Data, privacy, and security for Microsoft 365 Copilot",
+            "https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-privacy"
+          ]
+        ]
+      }
+    ],
+    "tags": [
+      "basics",
+      "architecture",
+      "concepts"
+    ],
+    "basis": [
+      "ai-drafted",
+      "source-read"
+    ],
+    "lastVerified": "2026-11-25"
+  },
+  {
+    "id": "history-of-copilot-agents",
+    "title": "A Brief History: From Scripted Bots to Copilot Agents",
+    "summary": "See why modern Copilot agents succeed where older rule-based chatbots failed\u2014tracing the leap from 2019 decision trees to 2026 multi-agent workflows.",
+    "intro": {
+      "what": "A clear timeline of how workplace digital assistants evolved over four major waves\u2014from brittle keyword scripts to reasoning agents that read real handbooks and coordinate across teams.",
+      "features": "Understanding this history explains why you no longer have to draw hundreds of 'if/else' flowchart branches or hire a programmer just to build a reliable policy helper.",
+      "m365": "Microsoft's platform evolved from standalone Power Virtual Agents (2019) to Microsoft 365 Copilot (2023), Agent Builder (2024), and unified Copilot Studio orchestration (2025\u20132026).",
+      "exchange": "Early bots broke on a single spelling mistake; modern agents read messy multi-sentence emails, cross-check handbooks, and draft complete responses.",
+      "developer": "Shifted from deterministic intent-slot NLU trees to Large Language Model (LLM) retrieval-augmented generation (RAG) and tool-calling orchestration.",
+      "sources": [
+        [
+          "Microsoft Learn \u00b7 What is Microsoft Copilot Studio?",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "Four Eras of Workplace Assistants (Pre-2022 to 2026)",
+        "paragraphs": [
+          "Era 1 \u2014 Scripted Decision-Tree Bots (1990s\u20132021): Anyone who ever clicked through an old website help widget\u2014or remembers Microsoft Office's animated paperclip 'Clippy'\u2014experienced first-generation bots. Even when Microsoft launched Power Virtual Agents in late 2019, builders had to manually draw every conversation branch and type 15 to 20 exact trigger phrases per question. If a worker made a typo or asked two questions in one sentence, the bot failed with: 'Sorry, I didn't understand that.'",
+          "Era 2 \u2014 General Generative AI & First-Gen Copilot (2022\u20132023): The arrival of large language models (ChatGPT in late 2022, followed by Microsoft 365 Copilot in 2023) shattered the rigid script barrier. For the first time, software could understand messy plain English, summarize long documents, and write fluently. However, first-generation Copilot was a single monolithic assistant\u2014teams could not easily customize its rules, lock it to one SharePoint folder, or publish a specialized helper for their shift.",
+          "Era 3 \u2014 Declarative Agents & Agent Builder (2024): In late 2024, Microsoft introduced Copilot Agents and the no-code Agent Builder right inside Microsoft 365 Copilot. This was the breakthrough for everyday operations: instead of coding or drawing complex flowcharts, a team lead could write plain-English instructions, point to a SharePoint folder, and publish a focused specialist in ten minutes.",
+          "Era 4 \u2014 Autonomous Triggers & Multi-Agent Teams (2025\u20132026): Today, agents are no longer limited to waiting for someone to type in a chat box. Through Copilot Studio, agents can wake up automatically when a new row is added to a tracker or an email arrives, execute multi-step actions behind human approval cards, and delegate sub-tasks across teams of specialized agents."
+        ],
+        "table": {
+          "columns": [
+            "Era",
+            "Technology",
+            "How You Built It",
+            "Why It Mattered"
+          ],
+          "rows": [
+            [
+              "Pre-2022",
+              "Rule-Based Bots & Early Power Virtual Agents",
+              "Manual keyword lists & rigid flowchart branches",
+              "Automated simple FAQs, but broke easily on unexpected phrasing"
+            ],
+            [
+              "2022\u20132023",
+              "General LLM Chat & M365 Copilot",
+              "Typing fresh prompts in a blank chat box each time",
+              "Understood natural language, but lacked saved team rules"
+            ],
+            [
+              "2024",
+              "Declarative Agents & Agent Builder",
+              "Plain-English Instructions + SharePoint folder link",
+              "Enabled non-coders to build grounded, shareable team helpers in minutes"
+            ],
+            [
+              "2025\u20132026",
+              "Copilot Studio Triggers & Multi-Agent Hubs",
+              "Visual topics, Power Platform connectors & agent routers",
+              "Added background automation, Excel/Teams actions, and specialist routing"
+            ]
+          ]
+        },
+        "sources": [
+          [
+            "Microsoft Learn \u00b7 What is Microsoft Copilot Studio?",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio"
+          ]
+        ]
+      }
+    ],
+    "tags": [
+      "history",
+      "evolution",
+      "concepts"
+    ],
+    "basis": [
+      "ai-drafted",
+      "source-read"
+    ],
+    "lastVerified": "2026-11-25"
+  },
+  {
+    "id": "five-levels-of-agents",
+    "title": "The 5-Level Enterprise Maturity Ladder",
+    "summary": "A structured progression from stateless prompt agents to governed multi-agent orchestrations in Copilot Studio.",
+    "intro": {
+      "what": "Five architectural maturity levels for guiding citizen makers and engineering teams from low-risk read-only helpers to production workflow automation.",
+      "features": "Separates zero-connector declarative agents (Levels 1\u20133) from connector-bearing and autonomous agents (Levels 4\u20135) requiring DLP and ALM review.",
+      "exchange": "Keep mail-drafting helpers read-only at Levels 1\u20133; gate automated sends behind human approval at Levels 4\u20135.",
+      "m365": "Enables tiered governance: self-service publishing for Levels 1\u20133, IT solution pipeline review for Levels 4\u20135.",
+      "developer": "Provides clear architectural gates for DLP compliance, connection references, and Purview auditing.",
+      "sources": [
+        [
+          "Microsoft \u00b7 Governance and lifecycle for Copilot agents",
+          "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/copilot-studio-lite-manage"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "Governance & Architecture by Maturity Level",
+        "paragraphs": [
+          "Level 1 \u2014 Stateless Instruction Agent: Pure system prompt + conversation starters. Zero external data egress or connector risk.",
+          "Level 2 \u2014 File-Pinned Declarative Agent: Scoped to 1\u20133 specific SharePoint files with WebSearch disabled.",
+          "Level 3 \u2014 Folder-Scoped & CodeInterpreter Agent: Grounded in a dedicated SharePoint library with optional Python CodeInterpreter for CSV analysis.",
+          "Level 4 \u2014 Connector & Action Agent (Copilot Studio): Uses Business-tier Power Platform connectors with mandatory human-in-the-loop confirmation cards.",
+          "Level 5 \u2014 Autonomous & Multi-Agent System (Copilot Studio): Event-triggered flows and parent-child agent orchestration packaged in Managed Solutions."
+        ],
+        "table": {
+          "columns": [
+            "Level",
+            "Architecture",
+            "Risk Profile",
+            "Governance Gate"
+          ],
+          "rows": [
+            [
+              "Level 1",
+              "Declarative (Instructions only)",
+              "Minimal",
+              "Self-service in Agent Builder"
+            ],
+            [
+              "Level 2",
+              "Declarative (File-pinned RAG)",
+              "Low (Entra ACLs enforced)",
+              "Verify WebSearch disabled"
+            ],
+            [
+              "Level 3",
+              "Declarative (Folder RAG + CSV)",
+              "Low-Moderate",
+              "Dedicated SharePoint library ACL check"
+            ],
+            [
+              "Level 4",
+              "Copilot Studio + Connectors",
+              "Moderate (Write-back)",
+              "Power Platform DLP + Confirmation Card"
+            ],
+            [
+              "Level 5",
+              "Copilot Studio Triggers + Multi-Agent",
+              "High (Autonomous)",
+              "Sandbox -> Managed Solution -> MAC Approval"
+            ]
+          ]
+        },
+        "sources": [
+          [
+            "Microsoft \u00b7 Governance and lifecycle for Copilot agents",
+            "https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/copilot-studio-lite-manage"
+          ]
+        ]
+      }
+    ],
+    "tags": [
+      "maturity",
+      "governance",
+      "architecture"
+    ],
+    "basis": [
+      "ai-drafted",
+      "source-read"
+    ],
+    "lastVerified": "2026-11-25"
+  },
+  {
+    "id": "grounding-and-honesty",
+    "title": "Zero-Trust RAG, Entra ACL Trimming & Purview Labels",
+    "summary": "How M365 Copilot enforces delegated permissions, sensitivity labels, and tenant isolation during semantic retrieval.",
+    "intro": {
+      "what": "Deep dive into M365 Copilot's retrieval pipeline: Entra ID token delegation, SharePoint ACL trimming, and Microsoft Purview sensitivity label inheritance.",
+      "features": "Agents never cache a separate unpermissioned vector database\u2014every query evaluates the caller's live Graph permissions.",
+      "exchange": "Mailbox and Teams grounding respects Exchange RBAC and retention policies.",
+      "m365": "Sensitivity labels (e.g., Confidential / Internal Only) on source SharePoint files propagate to Copilot responses and block unauthorized extraction.",
+      "developer": "Inspect items_by_url vs. site-wide scope and validate Restricted SharePoint Search (RSS) interactions.",
+      "sources": [
+        [
+          "Microsoft \u00b7 Data, privacy, and security for Microsoft 365 Copilot",
+          "https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-privacy"
+        ],
+        [
+          "Microsoft \u00b7 Semantic index for Copilot",
+          "https://learn.microsoft.com/en-us/microsoft-365-copilot/semantic-index-for-copilot"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "Why Maker OneDrive Links Break Team Agents",
+        "paragraphs": [
+          "When a maker links a file from personal OneDrive (/personal/user_domain/) and shares the agent with a security group, queries fail for coworkers because SharePoint ACL trimming blocks access to the maker's private OneDrive.",
+          "Standardize on dedicated SharePoint team sites with Entra security group Read access, and audit agent inventory exports for personal OneDrive URLs or overly broad site-wide wildcards."
+        ],
+        "sources": [
+          [
+            "Microsoft \u00b7 Data, privacy, and security for Microsoft 365 Copilot",
+            "https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-privacy"
+          ]
+        ]
+      }
+    ],
+    "tags": [
+      "security",
+      "entra-id",
+      "purview",
+      "rag"
+    ],
+    "basis": [
+      "ai-drafted",
+      "source-read"
+    ],
+    "lastVerified": "2026-11-25"
+  }
+]

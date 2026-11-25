@@ -1,0 +1,118 @@
+[
+  {
+    "id": "sharing-and-permissions",
+    "title": "Tenant Catalog Governance, Entra Security Groups & Inventory Audits",
+    "summary": "Manage agent lifecycle in Microsoft 365 Admin Center, remediate orphaned owners, and enforce Entra security group scoping.",
+    "intro": {
+      "what": "Operational governance controls for M365 Global Admins, AI Admins, and Power Platform Admins.",
+      "features": "Covers Integrated Apps catalog publishing, blocking broad Everyone-in-Org sharing on unreviewed agents, and auditing Agent-Inventory-Audit.csv.",
+      "exchange": "Monitor Purview audit events for CopilotInteraction and agent publish/share changes.",
+      "m365": "Require Entra security group assignment and dual ownership (Primary + Backup Owner) for all shared departmental agents.",
+      "developer": "Automate inventory exports via Power Platform Admin connectors and Microsoft Graph.",
+      "sources": [
+        [
+          "Microsoft \u00b7 Manage Copilot agents in Microsoft 365 admin center",
+          "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "Auditing Tenant Agent Posture",
+        "paragraphs": [
+          "M365 Engineers should periodically review active agents across four hygiene criteria: (1) Knowledge URLs point to shared SharePoint libraries rather than personal OneDrive, (2) WebSearch is disabled on policy/compliance agents, (3) Sharing scope uses Entra security groups rather than tenant-wide Everyone unless approved in the Admin Catalog, and (4) Every production agent has at least two active owners."
+        ],
+        "sources": [
+          [
+            "Microsoft \u00b7 Manage Copilot agents in Microsoft 365 admin center",
+            "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps"
+          ]
+        ]
+      }
+    ],
+    "tags": [
+      "admin-center",
+      "governance",
+      "audit"
+    ],
+    "basis": [
+      "ai-drafted",
+      "source-read"
+    ],
+    "lastVerified": "2026-11-25"
+  },
+  {
+    "id": "team-rollout-playbook",
+    "title": "Enterprise Rollout, Telemetry & Regression Evaluation Playbook",
+    "summary": "A four-stage engineering rollout pipeline: Golden Prompt Eval -> Security & DLP Review -> Phased Group Rollout -> Purview & Telemetry Monitoring.",
+    "intro": {
+      "what": "Standard operating procedure for taking business-unit agents from prototype to governed production.",
+      "features": "Combines golden regression test suites, Purview audit verification, and Copilot Studio analytics.",
+      "exchange": "Verify zero unintended external data egress prior to catalog publication.",
+      "m365": "Track user satisfaction, fallback/unanswered rate, and autonomous trigger run history.",
+      "developer": "Maintain a versioned JSON/CSV golden test suite in Git alongside declarative manifests.",
+      "sources": [
+        [
+          "Microsoft \u00b7 Analytics and telemetry in Copilot Studio",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-overview"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "Four-Gate Engineering Release Pipeline",
+        "paragraphs": [
+          "Gate 1 \u2014 Golden Prompt Evaluation: Run positive, boundary, and adversarial out-of-scope prompts to verify extractive citations and refusal accuracy.",
+          "Gate 2 \u2014 ACL & DLP Verification: Confirm SharePoint security group access, WebSearch state, and Power Platform DLP compliance.",
+          "Gate 3 \u2014 Pilot & Admin Catalog Publish: Deploy to a pilot Entra group first, inspect Activity traces, then publish via M365 Admin Center.",
+          "Gate 4 \u2014 Continuous Telemetry & Lifecycle: Monitor unanswered query rates in Copilot Studio Analytics and review orphaned owners quarterly."
+        ],
+        "table": {
+          "columns": [
+            "Release Gate",
+            "Owner",
+            "Exit Criteria"
+          ],
+          "rows": [
+            [
+              "1. Golden Eval",
+              "Agent Author / Engineer",
+              "100% pass on extractive citations & refusal tests"
+            ],
+            [
+              "2. Security & DLP",
+              "M365 / Power Platform Admin",
+              "SharePoint ACLs verified; zero DLP policy violations"
+            ],
+            [
+              "3. Pilot -> Catalog",
+              "AI Admin",
+              "Pilot telemetry clean; published to target Entra group"
+            ],
+            [
+              "4. Ops & Audit",
+              "Platform Ops",
+              "Quarterly Purview audit & orphaned-owner remediation"
+            ]
+          ]
+        },
+        "sources": [
+          [
+            "Microsoft \u00b7 Analytics and telemetry in Copilot Studio",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-overview"
+          ]
+        ]
+      }
+    ],
+    "tags": [
+      "telemetry",
+      "alm",
+      "evaluation"
+    ],
+    "basis": [
+      "ai-drafted",
+      "source-read"
+    ],
+    "lastVerified": "2026-11-25"
+  }
+]

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 230" role="img" aria-labelledby="tl1 dl1">
+  <title id="tl1">2026 Licensing Tiers and End-User Verification Checkpoints</title>
+  <desc id="dl1">Three license tiers from Included M365 Base to M365 Copilot Add-on and Copilot Studio Capacity/PAYG, plus self-service verification URLs.</desc>
+  <rect x="2" y="2" width="756" height="226" rx="12" fill="#faf6ea" stroke="#c1bcab" stroke-width="2"/>
+  <text x="24" y="34" fill="#145756" font-family="Georgia,serif" font-size="20">2026 Copilot Agent Licensing &amp; Self-Check Map</text>
+
+  <rect x="24" y="52" width="224" height="114" rx="8" fill="#fffdf6" stroke="#145756" stroke-width="1.8"/>
+  <text x="36" y="74" fill="#8b571b" font-family="system-ui,sans-serif" font-size="10.5" font-weight="700">TIER 1 · BASE M365 PLAN</text>
+  <text x="36" y="94" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5" font-weight="700">Copilot Chat (Included)</text>
+  <text x="36" y="114" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">• Web-grounded chat free</text>
+  <text x="36" y="131" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">• Agents billed via tenant</text>
+  <text x="36" y="147" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">  Copilot Credits (PAYG)</text>
+
+  <rect x="268" y="52" width="224" height="114" rx="8" fill="#edf1e7" stroke="#145756" stroke-width="2.2"/>
+  <text x="280" y="74" fill="#8b571b" font-family="system-ui,sans-serif" font-size="10.5" font-weight="700">TIER 2 · FULL SEAT LICENSE</text>
+  <text x="280" y="94" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5" font-weight="700">M365 Copilot ($21–$30/mo)</text>
+  <text x="280" y="114" fill="#182c2d" font-family="system-ui,sans-serif" font-size="11.5">• Full Agent Builder + SharePoint</text>
+  <text x="280" y="131" fill="#182c2d" font-family="system-ui,sans-serif" font-size="11.5">• Included Copilot Studio use</text>
+  <text x="280" y="147" fill="#182c2d" font-family="system-ui,sans-serif" font-size="11.5">  inside Teams / SharePoint / M365</text>
+
+  <rect x="512" y="52" width="224" height="114" rx="8" fill="#fffdf6" stroke="#8b571b" stroke-width="1.8"/>
+  <text x="524" y="74" fill="#8b571b" font-family="system-ui,sans-serif" font-size="10.5" font-weight="700">TIER 3 · TENANT CAPACITY</text>
+  <text x="524" y="94" fill="#182c2d" font-family="system-ui,sans-serif" font-size="13.5" font-weight="700">Copilot Studio ($0 Author)</text>
+  <text x="524" y="114" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">• 25k Credit Pack or PAYG</text>
+  <text x="524" y="131" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">• Needed for autonomous</text>
+  <text x="524" y="147" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">  triggers &amp; public websites</text>
+
+  <rect x="24" y="176" width="712" height="38" rx="6" fill="#145756"/>
+  <text x="380" y="200" text-anchor="middle" fill="#faf6ea" font-family="system-ui,sans-serif" font-size="12.5" font-weight="600">Self-Check URLs:  1) myaccount.microsoft.com/subscriptions   ·   2) m365.cloud.microsoft/chat   ·   3) copilotstudio.microsoft.com</text>
+</svg>

@@ -1,0 +1,5 @@
+AgentID,DisplayName,Surface,KnowledgeScope,WebSearch,Connectors,SharingScope,OwnerStatus
+AG-01,Parking Policy Helper,Agent Builder,SP:/sites/ParkingOps/Approved-Policies,Disabled,None,SecurityGroup:Parking-Staff,Active
+AG-02,Legacy Permit Drafter,Agent Builder,OneDrive:/Users/jdoe/Drafts,Enabled,None,EveryoneInOrg,NeedsRemediation
+AG-03,Fleet Ticket Intake,Copilot Studio,SP:/sites/ParkingOps/SOPs,Disabled,ExcelOnline;Teams,SecurityGroup:Fleet-Dispatch,Active
+AG-04,Unowned Event Bot,Copilot Studio,SiteWide:AllSharePoint,Enabled,SharePoint;HTTP-Custom,EveryoneInOrg,OrphanedOwner

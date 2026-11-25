@@ -1,0 +1,37 @@
+{
+  "title": "All About Copilot Agents \u00b7 M365 Engineer Edition",
+  "version": 1,
+  "reviewed": "2026-11-25",
+  "groups": [
+    {
+      "title": "First Steps: Architecture & Declarative Manifests",
+      "file": "begin-agents.json",
+      "guide": true,
+      "reviewed": "2026-11-25"
+    },
+    {
+      "title": "Zero-Trust Grounding, Entra ACLs & Graph Scope",
+      "file": "core-agents.json",
+      "reviewed": "2026-11-25"
+    },
+    {
+      "title": "Copilot Studio, Connectors, DLP & ALM Pipelines",
+      "file": "studio-agents.json",
+      "reviewed": "2026-11-25"
+    },
+    {
+      "title": "Tenant Governance, Purview Audit & Catalog Rollout",
+      "file": "team-rollout.json",
+      "reviewed": "2026-11-25"
+    },
+    {
+      "title": "24 M365 Engineering & Governance Labs (Simple to Complex)",
+      "track": "agents",
+      "file": "labs-agents.json",
+      "reviewed": "2026-11-25",
+      "startLabel": "Open Microsoft 365 Copilot & Admin Center",
+      "startUrl": "https://m365.cloud.microsoft/chat",
+      "gettingStarted": "Use a dedicated Developer/Sandbox environment, test SharePoint sites, and synthetic JSON/CSV payloads from the M365 Engineer Practice Kit."
+    }
+  ]
+}

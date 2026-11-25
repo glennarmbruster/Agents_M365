@@ -1,0 +1,194 @@
+[
+  {
+    "file": "diagram-chat-vs-agent.svg",
+    "lesson": "what-is-a-copilot-agent",
+    "caption": "Ad-hoc M365 Copilot Chat queries the broad tenant index; a Scoped Copilot Agent pins instructions, SharePoint URLs, and governance controls.",
+    "alt": "Architectural comparison of Ad-Hoc Copilot Chat vs. Scoped Copilot Agent.",
+    "source": "#what-is-a-copilot-agent",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "what-is-a-copilot-agent": {
+        "field": "sections.0.paragraphs.1",
+        "evidence": "Default to Declarative Agents"
+      }
+    }
+  },
+  {
+    "file": "diagram-agent-anatomy.svg",
+    "lesson": "what-is-a-copilot-agent",
+    "caption": "The four manifest pillars: Identity metadata, System Instructions, Knowledge capabilities, and Action connectors.",
+    "alt": "Four building blocks diagram.",
+    "source": "#what-is-a-copilot-agent",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "what-is-a-copilot-agent": {
+        "field": "sections.0.paragraphs.0",
+        "evidence": "Declarative Agents (declarative)"
+      }
+    }
+  },
+  {
+    "file": "diagram-agent-ladder.svg",
+    "lesson": "five-levels-of-agents",
+    "caption": "Tiered governance ladder: self-service declarative agents (Levels 1\u20133) vs. DLP- and ALM-gated Studio agents (Levels 4\u20135).",
+    "alt": "Five-level enterprise maturity ladder.",
+    "source": "#five-levels-of-agents",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "five-levels-of-agents": {
+        "field": "sections.0.paragraphs.0",
+        "evidence": "Level 1 \u2014 Stateless Instruction Agent"
+      }
+    }
+  },
+  {
+    "file": "diagram-grounding-fence.svg",
+    "lesson": "grounding-and-honesty",
+    "caption": "Zero-Trust RAG pipeline: Entra ID delegated token -> SharePoint ACL trimming -> Purview label inheritance -> cited output.",
+    "alt": "Zero-Trust RAG and Entra ID ACL enforcement pipeline.",
+    "source": "#grounding-and-honesty",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "grounding-and-honesty": {
+        "field": "sections.0.paragraphs.0",
+        "evidence": "SharePoint ACL trimming blocks access"
+      }
+    }
+  },
+  {
+    "file": "diagram-builder-vs-studio.svg",
+    "lesson": "builder-vs-studio",
+    "caption": "Declarative Agent Builder vs. Copilot Studio full workflow orchestration and Power Platform connectors.",
+    "alt": "Agent Builder vs. Copilot Studio architectural comparison.",
+    "source": "#builder-vs-studio",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "builder-vs-studio": {
+        "field": "sections.0.paragraphs.0",
+        "evidence": "Every connector in Copilot Studio"
+      }
+    }
+  },
+  {
+    "file": "diagram-action-approval-loop.svg",
+    "lesson": "interactive-intake-and-actions",
+    "caption": "Rule GOV-05: Validate entities -> Preview Adaptive Card -> Explicit Human Confirm -> Execute Connector Mutation.",
+    "alt": "Four-step human-in-the-loop confirmation flow.",
+    "source": "#interactive-intake-and-actions",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "interactive-intake-and-actions": {
+        "field": "sections.0.paragraphs.0",
+        "evidence": "3. Human-in-the-Loop Confirmation"
+      }
+    }
+  },
+  {
+    "file": "diagram-sharing-permissions.svg",
+    "lesson": "sharing-and-permissions",
+    "caption": "Synchronizing Lock 1 (Entra Security Group Share) and Lock 2 (SharePoint Library Read ACLs).",
+    "alt": "Two Locks diagram for Entra Security Groups and SharePoint ACLs.",
+    "source": "#sharing-and-permissions",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "sharing-and-permissions": {
+        "field": "sections.0.paragraphs.0",
+        "evidence": "Sharing scope uses Entra security groups"
+      }
+    }
+  },
+  {
+    "file": "diagram-team-rollout.svg",
+    "lesson": "team-rollout-playbook",
+    "caption": "Four-gate engineering release pipeline: Golden Eval -> Security & DLP -> Pilot & Catalog -> Purview Telemetry.",
+    "alt": "Four-gate engineering release cycle.",
+    "source": "#team-rollout-playbook",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "team-rollout-playbook": {
+        "field": "sections.0.paragraphs.0",
+        "evidence": "Gate 1 \u2014 Golden Prompt Evaluation"
+      }
+    }
+  },
+  {
+    "file": "diagram-lot-capacity-triage.svg",
+    "lesson": "lab-agents-11",
+    "caption": "Power Platform DLP classification matrix: Business vs. Non-Business isolation vs. Blocked connectors (Rule GOV-04).",
+    "alt": "Power Platform DLP connector classification diagram.",
+    "source": "#lab-agents-11",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "lab-agents-11": {
+        "field": "summary",
+        "evidence": "classify each connector"
+      }
+    }
+  },
+  {
+    "file": "diagram-shuttle-ada-dispatch.svg",
+    "lesson": "lab-agents-22",
+    "caption": "Enterprise ALM pipeline: Dev Sandbox (Unmanaged) -> UAT (Managed + Env Vars) -> Production Admin Catalog (Rule GOV-06).",
+    "alt": "ALM Solution promotion pipeline diagram.",
+    "source": "#lab-agents-22",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "lab-agents-22": {
+        "field": "summary",
+        "evidence": "Managed Solution"
+      }
+    }
+  },
+  {
+    "file": "diagram-citation-appeal-tree.svg",
+    "lesson": "lab-agents-10",
+    "caption": "Tenant Agent Posture Audit checks: SharePoint library path, WebSearch state, Security Group sharing, and Active Owners.",
+    "alt": "Posture audit decision checks diagram.",
+    "source": "#lab-agents-10",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "lab-agents-10": {
+        "field": "summary",
+        "evidence": "Analyze Agent-Inventory-Audit.csv"
+      }
+    }
+  },
+  {
+    "file": "diagram-multi-agent-dispatch.svg",
+    "lesson": "lab-agents-24",
+    "caption": "Level 5 Capstone: Parent Orchestrator delegating across Policy RAG, Telemetry Analyst, and Governed Intake specialists.",
+    "alt": "Multi-agent enterprise orchestration diagram.",
+    "source": "#lab-agents-24",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram",
+    "placements": {
+      "lab-agents-24": {
+        "field": "summary",
+        "evidence": "parent Operations Orchestrator"
+      }
+    }
+  },
+  {
+    "file": "diagram-agent-history.svg",
+    "lesson": "history-of-copilot-agents",
+    "caption": "Four waves of workplace assistants: from brittle pre-2022 decision trees to 2026 autonomous multi-agent teams.",
+    "alt": "Timeline showing Era 1 Scripted Chatbots, Era 2 General AI Chat, Era 3 Declarative Agents, and Era 4 Autonomous Teams.",
+    "source": "#history-of-copilot-agents",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram"
+  },
+  {
+    "file": "diagram-tools-stack.svg",
+    "lesson": "tools-and-setup",
+    "caption": "Zero desktop installs required: build and share agents using your web browser, SharePoint, and Teams.",
+    "alt": "Three-column tool stack showing Core Web Workshops, Standard M365 Suite, and Optional Add-Ons.",
+    "source": "#tools-and-setup",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram"
+  },
+  {
+    "file": "diagram-licensing-check.svg",
+    "lesson": "licensing-requirements-2026",
+    "caption": "Compare Included Copilot Chat, M365 Copilot ($21\u2013$30/mo), and Copilot Studio capacity/PAYG\u2014plus self-check URLs.",
+    "alt": "2026 Copilot Agent Licensing and Self-Check Map.",
+    "source": "#licensing-requirements-2026",
+    "credit": "All About Copilot Agents \u00b7 M365 Engineer Diagram"
+  }
+]

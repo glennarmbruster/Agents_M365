@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-labelledby="tt1 dt1">
+  <title id="tt1">Browser-First Tool Stack for Copilot Agents</title>
+  <desc id="dt1">Three columns showing Zero Desktop Installs Needed: Web Browser portals, Existing M365 Apps, and Optional Pro Tools.</desc>
+  <rect x="2" y="2" width="756" height="216" rx="12" fill="#faf6ea" stroke="#c1bcab" stroke-width="2"/>
+  <text x="24" y="34" fill="#145756" font-family="Georgia,serif" font-size="20">Your Tool Stack: 100% Cloud-Based (Zero Desktop Installs Required)</text>
+
+  <rect x="24" y="54" width="224" height="146" rx="8" fill="#edf1e7" stroke="#145756" stroke-width="2"/>
+  <text x="38" y="78" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">1. CORE WEB WORKSHOPS</text>
+  <text x="38" y="100" fill="#182c2d" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Edge / Chrome / Safari</text>
+  <text x="38" y="124" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">• m365.cloud.microsoft/chat</text>
+  <text x="48" y="140" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">(Agent Builder — Levels 1–3)</text>
+  <text x="38" y="162" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">• copilotstudio.microsoft.com</text>
+  <text x="48" y="178" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">(Copilot Studio — Levels 4–5)</text>
+
+  <rect x="268" y="54" width="224" height="146" rx="8" fill="#fffdf6" stroke="#145756" stroke-width="1.8"/>
+  <text x="282" y="78" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">2. DATA &amp; SHARING APPS</text>
+  <text x="282" y="100" fill="#182c2d" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Standard M365 Suite</text>
+  <text x="282" y="124" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">• SharePoint &amp; OneDrive</text>
+  <text x="292" y="140" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">(Approved SOP folders)</text>
+  <text x="282" y="162" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">• Teams &amp; Excel Online</text>
+  <text x="292" y="178" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">(Pin agents &amp; log rows)</text>
+
+  <rect x="512" y="54" width="224" height="146" rx="8" fill="#fffdf6" stroke="#8b571b" stroke-width="1.8"/>
+  <text x="526" y="78" fill="#8b571b" font-family="system-ui,sans-serif" font-size="11" font-weight="700">3. OPTIONAL ADD-ONS</text>
+  <text x="526" y="100" fill="#182c2d" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Advanced / IT Only</text>
+  <text x="526" y="124" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">• Power Automate (Web)</text>
+  <text x="536" y="140" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">(Custom connector flows)</text>
+  <text x="526" y="162" fill="#182c2d" font-family="system-ui,sans-serif" font-size="12">• VS Code + M365 Toolkit</text>
+  <text x="536" y="178" fill="#4d605c" font-family="system-ui,sans-serif" font-size="11.5">(Pro-developer code only)</text>
+</svg>

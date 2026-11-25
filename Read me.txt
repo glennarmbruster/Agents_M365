@@ -1,0 +1,7 @@
+ALL ABOUT COPILOT AGENTS · M365 ENGINEER EDITION
+
+HOW TO READ THIS BOOK
+1. Double-click "Read All About Copilot Agents - M365 Engineer Edition.html" in Edge, Chrome, Safari, or Firefox.
+   All chapters, 12 visual diagrams, the interactive Practice Desk, and the downloadable Practice Kit are bundled inside that single HTML file for 100% offline use.
+2. Share "Read All About Copilot Agents - M365 Engineer Edition.html" or "All-About-Copilot-Agents-M365-Engineer.zip" directly with your team via Microsoft Teams, email, or SharePoint.
+3. Click "Download Practice Kit (.zip)" inside the book (or extract site/practice/) to access all sample files.
